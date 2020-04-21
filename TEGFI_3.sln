@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEGFI_3", "TEGFI_3.csproj", "{B417B707-649F-4C46-A1C3-FB7B851D6193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensesTests", "..\ExpensesTests\ExpensesTests.csproj", "{C989219B-4388-4205-8280-D4B7BD013CD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B417B707-649F-4C46-A1C3-FB7B851D6193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B417B707-649F-4C46-A1C3-FB7B851D6193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B417B707-649F-4C46-A1C3-FB7B851D6193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B417B707-649F-4C46-A1C3-FB7B851D6193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C989219B-4388-4205-8280-D4B7BD013CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C989219B-4388-4205-8280-D4B7BD013CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C989219B-4388-4205-8280-D4B7BD013CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C989219B-4388-4205-8280-D4B7BD013CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C54C744-4B05-42A8-BE98-FC38979157FC}
+	EndGlobalSection
+EndGlobal
