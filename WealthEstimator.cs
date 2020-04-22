@@ -20,7 +20,9 @@
 
         public static double EstimateTenYearsAmount_OneTime(double inputAmount)
         {
-            double totalAmount = inputAmount;
+            if (inputAmount > 0.0)
+            {
+                double totalAmount = inputAmount;
 
             for (int i = 0; i < 120; i++)
             {
@@ -28,6 +30,8 @@
             }
 
             return totalAmount;
+            }
+            else throw new System.ArgumentOutOfRangeException("Wrong amount");
         }
     }
 }
