@@ -39,7 +39,7 @@ namespace TEGFI_3
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Can not open connection !");
+                MessageBox.Show("Can not open connection! \n Probably wrong login / password combination");
                 return false;
             }
         }

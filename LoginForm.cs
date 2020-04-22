@@ -19,7 +19,6 @@ namespace TEGFI_3
         {
             if (DBConnection.ConnectToDatabase(loginTextBox.Text, passwordTextBox.Text))
             {
-
                 this.Hide();
                 var form2 = new MainScreen();
                 form2.Closed += (s, args) => this.Close();

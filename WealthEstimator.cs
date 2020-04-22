@@ -15,7 +15,7 @@
 
                 return totalAmount;
             }
-            else throw new System.ArgumentOutOfRangeException("Wrong amount");
+            else throw new System.ArgumentOutOfRangeException("Wrong amount. Needs to be positive number");
         }
 
         public static double EstimateTenYearsAmount_OneTime(double inputAmount)
@@ -31,7 +31,7 @@
 
             return totalAmount;
             }
-            else throw new System.ArgumentOutOfRangeException("Wrong amount");
+            else throw new System.ArgumentOutOfRangeException("Wrong amount. Should be positive number");
         }
     }
 }
