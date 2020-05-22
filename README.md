@@ -8,4 +8,5 @@ Also attached an animated GIF to show app functionality without installation / u
 <hr>
 GIF
 <br>
-<img src="/levdjepko/TEGFI/blob/master/RECORDED_GIF.gif?raw=true" alt="RECORDED_GIF.gif">
+![](https://github.com/levdjepko/TEGFI/blob/master/RECORDED_GIF.gif)
+![](RECORDED_GIF.gif)
