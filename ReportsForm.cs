@@ -32,10 +32,9 @@ namespace TEGFI_3
             form2.Show();
         }
 
-        
+        //This loads all the data from the Mysql database
         private void LoadDataToShow()
         {
-
             MySqlConnection cnn;
             ConnectionString = "Server=3.227.166.251; database=U053QS; UID=U053QS; password=53688416942";
             cnn = new MySqlConnection(ConnectionString);
@@ -56,7 +55,7 @@ namespace TEGFI_3
                 }
             }
         }
-
+        //This loads only data from date to date (from date pickers)
         private void LoadDataToShow(string fromDate, string toDate)
         {
             cnn = new MySqlConnection(ConnectionString);
@@ -82,35 +81,7 @@ namespace TEGFI_3
 
         private void saveReport_Button_Click(object sender, EventArgs e)
         {
-            //TODO: Add reporting capabilities
-            //Here we will have to open a file, then add a date to the file, and add a report with all the expenses for the period
-            FileAccesser.WriteNewFile();
-            FileAccesser.WriteASingleValue ("From date:  " + dateTimePicker1.Value.ToString("yyyy-MM-dd"));
-            FileAccesser.NewLine();
-            FileAccesser.WriteASingleValue ("To date:  " + dateTimePicker2.Value.ToString("yyyy-MM-dd"));
-            FileAccesser.NewLine();
-
-            
-            for (int i = 0; i < dataGridView1.Columns.Count; i++)
-                {
-                    string header = dataGridView1.Columns[i].HeaderText;
-                    FileAccesser.WriteASingleValue(header);
-                    FileAccesser.WriteASingleValue("\t\t");
-                }
-            FileAccesser.NewLine();
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-
-                for (int i = 0; i < dataGridView1.Columns.Count; i++)
-                {
-                    string cellText = row.Cells[i].Value.ToString();
-                    FileAccesser.WriteASingleValue(cellText);
-                    FileAccesser.WriteASingleValue("\t\t");
-                }
-                FileAccesser.NewLine();
-            }
-            MessageBox.Show("Report saved in file REPORT.txt in current folder. Thank you!");
+          
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
