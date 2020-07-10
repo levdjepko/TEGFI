@@ -58,6 +58,7 @@ namespace TEGFI_3
         }
 
         //INSERT EXPENSE command here
+        //TODO: Move to the separate class
         private void addExpense_Button_Click(object sender, EventArgs e)
         {
             //check the user name associated with this command
