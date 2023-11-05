@@ -11,7 +11,7 @@ namespace TEGFI_3
     {
         public static void WriteNewFile() // Writes a header to the file
         {
-            //this will return a current project path, probably in bin / debug folder
+            // this will return a current project path, probably in bin / debug folder
             string destPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ("REPORT.txt"));
             using (StreamWriter file =
              new StreamWriter(destPath, true))
@@ -25,7 +25,7 @@ namespace TEGFI_3
 
         public static void WriteASingleValue(object value) // Writes an individual values
         {
-            //this will return a current project path, probably in bin / debug folder
+            // this will return a current project path, probably in bin / debug folder
             string destPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ("REPORT.txt"));
             using (StreamWriter file =
              new StreamWriter(destPath, true))
@@ -36,7 +36,7 @@ namespace TEGFI_3
         }
         public static void NewLine() // Writes an individual values
         {
-            //this will return a current project path, probably in bin / debug folder
+            // this will return a current project path, probably in bin / debug folder
             string destPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ("REPORT.txt"));
             using (StreamWriter file =
              new StreamWriter(destPath, true))
