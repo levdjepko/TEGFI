@@ -9,7 +9,7 @@ namespace TEGFI_3
     {
         public string ConnectionString { get; set; }
         
-        //this is the main connection string to our database
+        // this is the main connection string to our database
         public string UserName { get; set; }
         public MySqlConnection cnn { get; set; }
 
@@ -25,7 +25,7 @@ namespace TEGFI_3
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            //Return back to main screen
+            // Return back to the main screen
             this.Hide();
             var form2 = new MainScreen();
             form2.Closed += (s, args) => this.Close();
