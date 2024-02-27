@@ -19,6 +19,7 @@ namespace TEGFI_3
         {
             if (DBConnection.ConnectToDatabase(loginTextBox.Text, passwordTextBox.Text))
             {
+            // hide the login form and show the main screen when the user types in correct password
                 this.Hide();
                 var form2 = new MainScreen();
                 form2.Closed += (s, args) => this.Close();
@@ -28,7 +29,7 @@ namespace TEGFI_3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //temporarily have a password in the box for debugging reasons
+            // temporarily have a password in the box for debugging reasons
             loginTextBox.Text = "U053QS";
             passwordTextBox.Text = "53688416942";
         }
