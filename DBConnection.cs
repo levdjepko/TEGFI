@@ -11,7 +11,7 @@ namespace TEGFI_3
         {
             string connetionString = null;
             MySqlConnection cnn;
-            connetionString = $"Server=3.227.166.251; database=U053QS; UID={id}; password={password}";
+            connetionString = $"Server=3.227.166.251; database=U053QS; UID={id}; password={password}"; // outdated!
             cnn = new MySqlConnection(connetionString);
             try
             {
