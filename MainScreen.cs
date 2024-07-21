@@ -7,7 +7,7 @@ namespace TEGFI_3
 {
     public partial class MainScreen : Form
     {
-        private const string ConnectionConstant = "Server=3.227.166.251; database=U053QS; UID=U053QS; password=53688416942"; // This server is outdated now
+        private const string ConnectionConstant = "Server=3.227.166.251; database=U053QS; UID=U053QS; password="; // This server is outdated now
 
         public MainScreen()
         {
